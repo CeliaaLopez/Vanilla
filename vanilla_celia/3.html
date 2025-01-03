@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body3">
+
+    <form id="formPreguntas" action="#">
+        <label for="pregunta">Pregunta</label>
+        <input type="text" id="pregunta" name="pregunta" required>
+        <br><br>
+        <label for="verdadero">Verdadero</label>
+        <input type="radio" value="verdadero" id="verdadero" name="verdadero_falso" required>
+        <label for="falso">Falso</label>
+        <input type="radio" value="falso" id="falso" name="verdadero_falso" required>
+        <br><br>
+        <label for="puntuacion">Puntuación</label>
+        <input type="text" id="puntuacion" name="puntuacion" pattern="[0-9]" required>
+        <br><br>
+        <input type="button" id="atras" disabled value="atrás">
+        <input type="button" id="grabar" disabled value="grabar">
+    </form>
+
+    <div>
+        <p id="cargando">Cargando las preguntas...</p>
+    </div>
+
+    <h1 id="mensajeError2"></h1>
+
+    <table id="tabla">
+        <thead>
+            <th>Pregunta</th>
+            <th>Respuesta</th>
+            <th>Puntuación</th>
+            <th>Estado</th>
+        </thead>
+        <tbody id="bodyTabla"></tbody>
+    </table>
+
+    <script src="cookies.js"></script>
+    <script src="3.js"></script>
+
+</body>
+
+</html>
